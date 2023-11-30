@@ -21,7 +21,7 @@ class Star {
 		}
 
 		// Speed is done according to the distance between loc and the mouse:
-		let m = constrain(map(distanceToMouse, 0, width, 1, 0.05), 0.05, );
+		let m = constrain(map(distanceToMouse, 0, width, 0.8, 0.05), 0.05, 0.8);
 		this.speed.normalize().mult(m);
 
 		// Handle box collisions
